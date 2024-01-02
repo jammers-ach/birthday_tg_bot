@@ -85,6 +85,9 @@ def days_until_same_day(d1, d2):
     day_of_year_d2 = d2.timetuple().tm_yday
 
     days_until_same_day = day_of_year_d2 - day_of_year_d1
+
+    if days_until_same_day < 0:
+        return days_until_same_day + 365
     return days_until_same_day
 
 
