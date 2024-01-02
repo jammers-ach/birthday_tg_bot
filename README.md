@@ -6,6 +6,17 @@ A telegram bot which reads a google sheet and sends you reminders for birthdays.
 You create a google sheet with the date of birth, name and present idea for someone.
 
 
+# Prerequesites
+
+## Drive access
+Setup a service account
+
+https://docs.gspread.org/en/latest/oauth2.html#service-account
+
+
+## Telegram bot
+
+
 # installation
 
 create a config file `~/.birthday_bot_creds`
