@@ -16,16 +16,16 @@ https://docs.gspread.org/en/latest/oauth2.html#service-account
 
 ## Telegram bot
 
+Go to the get_id_bot and get your chat id, create a new bot in botfather and the token
 
 # installation
 
-create a config file `~/.birthday_bot_creds`
+create a config file `~/.birthday_bot_config`
 
 ```
-TG_TOKEN=<telegram bot token>
-GSHEETS_
-WHATEVER_ELSE_YOU NEED
-RECIPIENTS=
+BOT_TOKEN=<telegram bot token>
+SHEET_URL=<url of your google sheets>
+CHAT_IDS=<comma seperated list of chat ids>
 ```
 
 then install the python dependencies

@@ -55,7 +55,7 @@ def get_birthdays(gc, sheet_url):
     list_of_dicts = sh.sheet1.get_all_records()
     for entry in list_of_dicts:
         parsed_dob = datetime.strptime(entry["DOB"], "%d.%m.%Y")
-        entry["date"] = parsed_dob
+        entry["date"] = parsed_dob.replace(year=today.year)
 
     return list_of_dicts
 
@@ -167,7 +167,7 @@ def main():
         parser.print_help()
         return
 
-    birthdays = sorted(birthdays, key=lambda x: x['date'], reverse=True)
+    birthdays = sorted(birthdays, key=lambda x: x['date'])
 
     if len(birthdays) > 0:
 
